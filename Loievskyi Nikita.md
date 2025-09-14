@@ -1,4 +1,3 @@
-# l
 <!DOCTYPE html> 
 <html lang="pl-PL"> 
 <html> 
