@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loievskyi Nikita</title>
+  <style>
+    .red-star {
+      color: red;
+font-size: 22px; 
+    }
+  </style>
+ 
+</head>
+<body>
+  <main class="form-card" aria-labelledby="tytul">
+    <h1 id="tytul">Formularz: Dlaczego wybrałeś/wybrałaś tę uczelnię?</h1>
+    <p class="helper">Wypełnij pola poniżej. Pola oznaczone * są obowiązkowe.</p>
+
+    <form id="ankieta-uczelni" action="/submit" method="post" novalidate>
+      <div class="row row-2">
+        <div>
+          <label for="imie" class="required">Imię<span class="red-star">*</span></label>
+          <input id="imie" name="imie" type="text" required autocomplete="given-name" placeholder="np. Anna" />
+        </div><br>
+        <div>
+          <label for="nazwisko" class="required">Nazwisko<span class="red-star">*</span></label>
+          <input id="nazwisko" name="nazwisko" type="text" required autocomplete="family-name" placeholder="np. Kowalska" />
+        </div>
+      </div><br>
+
+      <div class="row row-2">
+        <div>
+          <label for="email" class="required">Adres e‑mail<span class="red-star">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="np. anna.kowalska@example.com" />
+        </div><br>
+        <div>
+          <label for="telefon">Numer telefonu</label>
+          <input id="telefon" name="telefon" type="tel" inputmode="tel" pattern="^[0-9+\s-]{7,}$" placeholder="np. +48 600 000 000" />
+          <small class="helper">Dozwolone cyfry, spacje, plus i myślniki.</small>
+        </div>
+      </div><br>
+
+      <div class="row row-2">
+        <div>
+          <label for="kierunek" class="required">Kierunek studiów<span class="red-star">*</span></label>
+          <select id="kierunek" name="kierunek" required>
+            <option value="" disabled selected>Wybierz kierunek</option>
+            <option>Informatyka</option>
+            <option>Zarządzanie</option>
+            <option>Ekonomia</option>
+            <option>Prawo</option>
+            <option>Filologia</option>
+            <option>Inny</option>
+          </select>
+        </div><br>
+        <div>
+          <label for="rok" class="required">Rok studiów<span class="red-star">*</span></label>
+          <select id="rok" name="rok" required>
+            <option value="" disabled selected>Wybierz rok</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+            <option>V</option>
+          </select>
+        </div>
+      </div><br>
+
+      <fieldset class="row" aria-describedby="powod-help">
+        <legend class="required">Główny powód wyboru uczelni<span class="red-star">*</span></legend>
+        <div class="inline">
+          <input type="radio" id="powod-reputacja" name="powod" value="reputacja" required />
+          <label for="powod-reputacja">Reputacja i ranking</label>
+        </div>
+        <div class="inline">
+          <input type="radio" id="powod-program" name="powod" value="program" />
+          <label for="powod-program">Program i jakość zajęć</label>
+        </div>
+        <div class="inline">
+          <input type="radio" id="powod-lokalizacja" name="powod" value="lokalizacja" />
+          <label for="powod-lokalizacja">Lokalizacja</label>
+        </div>
+        <div class="inline">
+          <input type="radio" id="powod-stypendia" name="powod" value="stypendia" />
+          <label for="powod-stypendia">Stypendia i wsparcie finansowe</label>
+        </div>
+        <div class="inline">
+          <input type="radio" id="powod-inne" name="powod" value="inne" />
+          <label for="powod-inne">Inne</label>
+        </div>
+        <small id="powod-help" class="helper">Zaznacz jedną opcję.</small>
+      </fieldset>
+
+      <div class="row">
+        <label for="opis" class="required">Dlaczego wybrałeś/wybrałaś tę uczelnię<span class="red-star">*</span></label>
+        <textarea id="opis" name="opis" required minlength="30" maxlength="1500" placeholder="Opisz swoje motywacje, oczekiwania i doświadczenia. Minimum 30 znaków."></textarea>
+        <small class="helper">Podaj konkretne powody, np. kadra, praktyki, wyposażenie, społeczność, badania.</small>
+      </div><br>
+
+      <div class="row">
+        <label for="zalaczniki">Załącz plik (opcjonalnie)</label>
+        <input id="zalaczniki" name="zalaczniki" type="file" accept=".pdf,.doc,.docx,.txt,.jpg,.png" />
+        <small class="helper">Możesz dołączyć CV, list motywacyjny lub zdjęcia.</small>
+      </div><br>
+
+      <div class="row">
+        <div class="inline">
+          <input id="rodo" name="rodo" type="checkbox" required />
+          <label for="rodo" class="required">Zgadzam się na przetwarzanie moich danych osobowych (RODO).<span class="red-star">*</span></label>
+        </div>
+        <small class="helper">Twoje dane będą wykorzystane wyłącznie do celów rekrutacyjnych.</small>
+      </div><br>
+
+      <div class="actions">
+        <button type="submit">Wyślij formularz</button>
+        <button type="reset">Wyczyść</button>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    // Prosta walidacja z komunikatami po polsku
+    (function () {
+      const form = document.getElementById('ankieta-uczelni');
+      form.addEventListener('submit', function (e) {
+        if (!form.checkValidity()) {
+          e.preventDefault();
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) {
+            firstInvalid.focus();
+          }
+        }
+      });
+
+      // Niestandardowe komunikaty w czasie rzeczywistym
+      form.querySelectorAll('input, select, textarea').forEach(el => {
+        el.addEventListener('invalid', () => {
+          el.setCustomValidity('');
+          if (el.validity.valueMissing) {
+            el.setCustomValidity('To pole jest obowiązkowe.');
+          } else if (el.validity.typeMismatch && el.type === 'email') {
+            el.setCustomValidity('Podaj poprawny adres e‑mail.');
+          } else if (el.validity.patternMismatch && el.id === 'telefon') {
+            el.setCustomValidity('Podaj poprawny numer telefonu.');
+          } else if (el.validity.tooShort && el.id === 'opis') {
+            el.setCustomValidity('Opis powinien mieć co najmniej 30 znaków.');
+          }
+        });
+        el.addEventListener('input', () => el.setCustomValidity(''));
+      });
+    })();
+  </script>
+<br><A HREF="index.html">Powrót do strony</A><br>
+</body>
+</html>
