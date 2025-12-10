@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loievskyi Nikita</title>
+  <style>
+    .red-star {
+      color: red;
+font-size: 22px; 
+    }
+  </style>
+ </head>
+<body>
+
+<form>
+
+    <h1 id="tytul">Formularz: Dlaczego wybrałeś/wybrałaś tę uczelnię?</h1>
+    <p class="helper">Wypełnij pola poniżej. Pola oznaczone <span class="red-star">*</span> są obowiązkowe.</p>
+
+
+<label for="imie" class="required" >Imię<span class="red-star">*</span></label>
+	<input id="imie" placeholder="np. Anna" /><br><br>
+	
+<label for="nazwisko" class="required">Nazwisko<span class="red-star">*</span></label>
+    <input id="nazwisko" name="nazwisko" type="text" required autocomplete="family-name" placeholder="np. Kowalska" /><br><br>
+   
+   
+<label for="email" class="required">Adres e‑mail<span class="red-star">*</span></label>
+    <input id="email" required autocomplete="email" placeholder="np. anna.kowalska@example.com" /><br><br>
+
+<label for="telefon">Numer telefonu</label>
+	<input id="telefon" pattern="^[0-9+\s-]{7,}$" placeholder="np. +48 600 000 000" /><br><br>
+
+
+<label for="kierunek" class="required">Kierunek studiów<span class="red-star">*</span></label>
+          <select id="kierunek" required>
+            <option value="" disabled selected>Wybierz kierunek</option>
+            <option>Informatyka</option>
+            <option>Zarządzanie</option>
+            <option>Ekonomia</option>
+            <option>Prawo</option>
+            <option>Filologia</option>
+            <option>Inny</option>
+          </select><br><br>
+
+
+<label for="rok" class="required">Rok studiów<span class="red-star">*</span></label>
+          <select id="rok" required>
+            <option value="" disabled selected>Wybierz rok</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+            <option>V</option>
+          </select><br><br>
+		  
+		  
+		  <fieldset class="row" aria-describedby="powod-help">
+        <legend class="required">Główny powód wyboru uczelni<span class="red-star">*</span></legend>
+       
+          <input type="radio" id="powod-reputacja" name="powod" value="reputacja" required />
+          <label for="powod-reputacja">Reputacja i ranking</label><br>
+        
+      
+          <input type="radio" id="powod-program" name="powod" value="program" />
+          <label for="powod-program">Program i jakość zajęć</label><br>
+       
+      
+          <input type="radio" id="powod-lokalizacja" name="powod" value="lokalizacja" />
+          <label for="powod-lokalizacja">Lokalizacja</label><br>
+       
+       
+          <input type="radio" id="powod-stypendia" name="powod" value="stypendia" />
+          <label for="powod-stypendia">Stypendia i wsparcie finansowe</label><br>
+      
+       
+          <input type="radio" id="powod-inne" name="powod" value="inne" />
+          <label for="powod-inne">Inne</label><br>
+      
+        <small id="powod-help" class="helper">Zaznacz jedną opcję.</small>
+      </fieldset>
+
+        <label for="opis" class="required">Dlaczego wybrałeś/wybrałaś tę uczelnię<span class="red-star">*</span></label>
+        <textarea id="opis" name="opis" required minlength="30" maxlength="1500" placeholder="Opisz swoje motywacje, oczekiwania i doświadczenia. Minimum 30 znaków."></textarea>
+        <small class="helper">Podaj konkretne powody, np. kadra, praktyki, wyposażenie, społeczność, badania.</small>
+      <br><br>
+
+      
+        <label for="zalaczniki">Załącz plik (opcjonalnie)</label>
+        <input id="zalaczniki" name="zalaczniki" type="file" accept=".pdf,.doc,.docx,.txt,.jpg,.png" />
+        <small class="helper">Możesz dołączyć CV, list motywacyjny lub zdjęcia.</small>
+      <br><br>
+
+      
+        
+          <input id="rodo" name="rodo" type="checkbox" required />
+          <label for="rodo" class="required">Zgadzam się na przetwarzanie moich danych osobowych (RODO).<span class="red-star">*</span></label>
+        
+        <small class="helper">Twoje dane będą wykorzystane wyłącznie do celów rekrutacyjnych.</small>
+      <br><br>
+
+      
+        <button type="submit">Wyślij formularz</button>
+        <button type="reset">Wyczyść</button>
+      
+
+
+
+
+
+
+
+
+
+<br><A HREF="index.html">Powrót do strony</A><br>
+    </body>
+</html>
