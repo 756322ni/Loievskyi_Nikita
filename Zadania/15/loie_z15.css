@@ -1,0 +1,29 @@
+body {
+  
+  color: rgb(61%, 29%, 80%);
+  font-size: 16mm;
+}
+
+p {
+  color: #68B44A;
+  font-size: 19mm;
+  font-family:Arial;
+}
+.center-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  fieldset {
+    border: 3px solid black;
+    padding: 15px;
+    width: 700px;
+    font-family: Arial;
+  }
+  .separator {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+/* Loievskyi Z15_html */
