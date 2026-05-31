@@ -1,0 +1,23 @@
+div#one {
+    background-color: #FFFDD0;
+    width: 100%;
+    height: 40%;
+}
+div#one p {
+    color: orange;
+    font-size: 20pt;
+    font-family: Arial;
+}
+div#two {
+    background-color: #ff00ff;
+    width: 80%;
+    height: 15%;
+}
+div#thre {
+    background-color: #90ee90;
+    width: 100%;
+    height: 30%;
+    
+}
+
+/* Loievskyi Z20_css */

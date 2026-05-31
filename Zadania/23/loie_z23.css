@@ -1,0 +1,35 @@
+    
+    p#pogrubienie_loievskyi{
+font-size: 34px;
+color: #9B5ACB;
+font-weight: bold;
+}
+    p#pochylona_loievskyi{
+font-size: 39pt;
+color: #FFBE67;
+font-style: italic;
+}
+    p#index_gorny_loievskyi{
+font-size: 1.4cm;
+color: #AFF017;
+text-decoration: overline;
+}
+    p#index_dolny_loievskyi{
+font-size: 2.3cm;
+color: rgb(29%, 94%, 98%);
+text-decoration: underline;
+}
+    p#mono_loievskyi{
+font-size: 44px;
+color: #2FDC67;
+
+}
+    p#powiekszenie_loievskyi{
+color: #693C99;
+
+}
+    p#pomniejszenie_loievskyi{
+color:rgb(80%, 62%, 20%);
+
+}
+/* Loievskyi Z23_css */
