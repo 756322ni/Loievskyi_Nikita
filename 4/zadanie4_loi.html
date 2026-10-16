@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 4 – Loievskyi Nikita klasa 3F</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+p {
+  margin: 10px 0;
+}
+.question {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.answer {
+  margin-left: 20px;
+  color: #333;
+}
+pre {
+  background: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+</style>
+
+<script>
+function okno_zamknij() {
+    window.close();
+}
+</script>
+</head>
+
+<body>
+
+<h1>Zadanie 4 – Loievskyi Nikita klasa 3F</h1>
+
+<div class="question">1) Kiedy powstał JavaScript (podaj datę).</div>
+<div class="answer">JavaScript powstał w maju 1995 roku.</div>
+
+<div class="question">2) Dlaczego jest to język skryptowy.</div>
+<div class="answer">Bo jest interpretowany w czasie działania, a nie kompilowany do kodu maszynowego.</div>
+
+<div class="question">3) Gdzie jest wykonywany JS (klient lub serwer).</div>
+<div class="answer">JS działa w przeglądarce (klient), ale dzięki Node.js także na serwerze.</div>
+
+<div class="question">4) Dlaczego JS to bezpieczne narzędzie.</div>
+<div class="answer">Bo działa w sandboxie i nie ma dostępu do plików systemowych użytkownika.</div>
+
+<div class="question">5) Czy jest to język obiektowy, jeśli tak to dlaczego.</div>
+<div class="answer">Tak, ponieważ wszystko w JS jest obiektem, a język wspiera klasy i dziedziczenie.</div>
+
+<div class="question">6) Wymień zalety JS:</div>
+<div class="answer">Zaleta 1: działa w każdej przeglądarce bez instalacji.</div>
+<div class="answer">Zaleta 2: umożliwia tworzenie interaktywnych stron.</div>
+<div class="answer">Zaleta 3: posiada ogromny ekosystem bibliotek i frameworków.</div>
+
+<div class="question">7) Framework to:</div>
+<div class="answer">Gotowy zestaw narzędzi i struktur ułatwiających tworzenie aplikacji.</div>
+
+<div class="question">8) Do aplikacji mobilnych można użyć Framework.</div>
+<div class="answer">Tak, np. React Native, Ionic, NativeScript.</div>
+
+<div class="question">9) Aplikacje responsywne to:</div>
+<div class="answer">Strony dopasowujące wygląd do ekranu urządzenia.</div>
+
+<div class="question">10) Przepisz linię kodu i wyjaśnij działanie:</div>
+
+<pre>
+&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt;
+</pre>
+
+<div class="answer">Tworzy przycisk. Po kliknięciu wywołuje funkcję WinOpen(), która otwiera nowe okno.</div>
+
+<div class="question">11) Wyjaśnij działanie instrukcji:</div>
+
+<pre>
+window.open("obraz.html","okienko",
+"toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+</pre>
+
+<div class="answer">Otwiera nowe okno z plikiem obraz.html i ustawia jego parametry:</div>
+<div class="answer">toolbar=no – ukrywa pasek narzędzi</div>
+<div class="answer">directories=no – ukrywa katalogi</div>
+<div class="answer">menubar=no – ukrywa menu</div>
+<div class="answer">height=280 – wysokość okna</div>
+<div class="answer">width=160 – szerokość okna</div>
+<div class="answer">top=200 – pozycja od góry</div>
+<div class="answer">left=200 – pozycja od lewej</div>
+
+<div class="question">12) Opisz instrukcję window.close()</div>
+<div class="answer">Zamyka aktualne okno, jeśli zostało otwarte przez JavaScript.</div>
+
+<div class="question">13) Druga możliwość wyświetlania kodu bez wykonywania.</div>
+<div class="answer">Można użyć znacznika &lt;pre&gt;, który wyświetla kod bez interpretacji HTML.</div>
+
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

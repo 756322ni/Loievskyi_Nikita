@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Loievskyi Nikita</title>
+
+<script type="text/javascript">
+function show_confirm_loi() {
+    let r = confirm("Naciśnij klawisz");
+    if (r == true) {
+        document.write("Nacisnąłeś OK!");
+    } else {
+        document.write("Nacisnąłeś Cancel!");
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h1>Zadanie 8 – Confirm Box</h1>
+
+<input type="button" value="Pokaż Confirm Box" onclick="show_confirm_loi()">
+
+<p><b><u>Teoria:</u></b><br>
+Confirm Box służy do potwierdzania decyzji użytkownika.  
+OK → zwraca <b>true</b>, Cancel → zwraca <b>false</b>.
+</p>
+
+</body>
+</html>

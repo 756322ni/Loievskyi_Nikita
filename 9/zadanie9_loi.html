@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Loievskyi Nikita</title>
+
+<script type="text/javascript">
+function show_prompt_loi() {
+    let name = prompt("Napisz imię", "Imię Nazwisko");
+    if (name != null && name != "") {
+        document.write("Witaj " + name + "! Jak się masz?");
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h1>Zadanie 9 – Prompt Box</h1>
+
+<input type="button" value="Pokaż Prompt Box" onclick="show_prompt_loi()">
+
+<p><b><u>Teoria:</u></b><br>
+Prompt Box służy do wprowadzania danych przez użytkownika.  
+OK → zwraca wpisaną wartość, Cancel → zwraca <b>null</b>.
+</p>
+
+</body>
+</html>

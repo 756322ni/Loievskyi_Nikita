@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Loievskyi Nikita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+        }
+        .pytanie {
+            font-weight: bold;
+        }
+        .teoria b {
+            font-weight: bold;
+        }
+        .teoria u {
+            text-decoration: underline;
+        }
+        #teoria {
+            margin-top: 20px;
+            border-top: 1px solid #888;
+            padding-top: 15px;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Loievskyi Nikita – Zadanie 6</h1>
+
+    <!-- PRZYCISK NA STRONIE ZALICZENIOWEJ -->
+    <button onclick="pokazTeorie()">Pokaż / ukryj teorię do Zadania 6</button>
+
+    <div id="teoria" style="display:none;" class="teoria">
+        <!-- PYTANIA I ODPOWIEDZI -->
+
+        <p class="pytanie">1) Rodzaje okienek</p>
+        <p>
+            <b><u>Rodzaje okienek:</u></b><br>
+            - Okienko <b><u>alert</u></b> – wyświetla okienko dialogowe z informacją i przyciskiem OK.<br>
+            - Okienko <b><u>prompt</u></b> – generuje okno, w którym użytkownik może wpisać wartość,
+              zwracaną następnie do programu.<br>
+            - Okienko <b><u>confirm</u></b> – służy do tego, aby użytkownik coś potwierdził.
+        </p>
+
+        <p class="pytanie">2) Konwersji liczb</p>
+        <p>
+            <b><u>Konwersja liczb:</u></b><br>
+            Wartość odczytana poleceniem <b><u>prompt</u></b> jest typu tekstowego (String),
+            dlatego do obliczeń trzeba ją przekonwertować na typ liczbowy.<br>
+            Funkcje konwersji:<br>
+            - <b><u>parseFloat(zmienna)</u></b> – konwersja zmiennej na typ zmiennoprzecinkowy (float).<br>
+            - <b><u>parseInt(zmienna)</u></b> – konwersja zmiennej na typ całkowity (int).<br>
+            - <b><u>toString(zmienna)</u></b> – konwersja zmiennej na typ tekstowy (string).
+        </p>
+
+        <p class="pytanie">3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad (trzy zasady)</p>
+        <p>
+            <b><u>Zasady nadawania nazw zmiennym:</u></b><br>
+            1. Nazwa zmiennej musi się zaczynać od litery, znaku <b><u>$</u></b> lub <b><u>_</u></b>,
+               może zawierać tylko litery (bez polskich znaków), cyfry oraz <b><u>$</u></b> i <b><u>_</u></b>.<br>
+               <b><u>Poprawne nazwy zmiennych:</u></b> zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+               <b><u>Błędne nazwy zmiennych:</u></b> 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord,
+               &gracz, wysokość, imię+nazwisko.<br><br>
+            2. <b><u>Wielkość liter ma znaczenie</u></b> – zmienne <b>Rekord</b> i <b>rekord</b> to dwie różne zmienne.
+               Jest to częsta przyczyna błędów początkujących programistów.<br><br>
+            3. <b><u>Nie należy używać słów kluczowych JavaScript jako nazw zmiennych</u></b>.
+        </p>
+
+        <p class="pytanie">4) Omów typy zmiennych w JavaScript</p>
+        <p>
+            <b><u>Typy zmiennych w JavaScript:</u></b><br>
+            W JavaScript nie definiuje się typów zmiennych tak jak w C++, typ jest określany
+            w momencie przypisania wartości.<br><br>
+
+            <b><u>Number – typ liczbowy</u></b><br>
+            - liczby całkowite,<br>
+            - liczby zmiennoprzecinkowe.<br><br>
+
+            <b><u>String – typ tekstowy</u></b><br>
+            Przechowuje ciągi znaków (teksty).<br><br>
+
+            <b><u>Boolean – typ logiczny</u></b><br>
+            Przyjmuje wartości <b>true</b> lub <b>false</b>.<br><br>
+
+            <b><u>Null – pusta zawartość</u></b><br>
+            Oznacza świadomie ustawioną „brak wartości”.<br><br>
+
+            <b><u>Undefined – typ niezidentyfikowany</u></b><br>
+            Zmienna została zadeklarowana, ale nie przypisano do niej żadnej wartości.
+        </p>
+    </div>
+
+</body>
+</html>

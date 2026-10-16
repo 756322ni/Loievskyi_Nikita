@@ -1,0 +1,33 @@
+<!DOCTYPE html>   
+<head>    
+<title>Loievskyi Nikita</title>    
+<meta charset="utf-8">  
+</head>  
+<body> 
+<div style="color:green;font-size:60px;"> 
+<script language="JavaScript"> 
+do{
+var D1_loi=prompt("Dzień1=",""); 
+var God_loi=prompt("Godzina=","");
+var D2_loi=prompt("Dzień2=",""); 
+var Roznica_loi;
+
+if(D1_loi<0 || D1_loi>28 || D2_loi<0 || D2_loi>28){
+    alert("dni po za miesiącem");}
+if(God_loi<0 || God_loi>24){
+    alert("godzina po za dniem");}
+
+}while(D1_loi<0 || D1_loi>28 || D2_loi<0 || D2_loi>28)
+if(D1_loi>D2_loi){
+    Roznica_loi=(D1_loi-D2_loi)*86400-God_loi;
+    document.write("Różnica między "+D1_loi+"dniem i "+D2_loi+" dniem = "+Roznica_loi+"<br>");
+}
+else{
+    Roznica_loi=(D2_loi-D1_loi)*86400-God_loi;
+    document.write("Różnica między "+D1_loi+"dniem i "+D2_loi+" dniem = "+Roznica_loi+"<br>");
+}
+ 
+</script> 
+</div> 
+</body> 
+</html> 
