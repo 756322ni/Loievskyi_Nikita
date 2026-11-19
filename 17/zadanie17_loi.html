@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Loievskyi Nikita</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .pytanie {
+            font-weight: bold;
+        }
+        table, tr, th, td{
+        border-collapse:collapse;
+        border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+      
+        <p class="pytanie">1) Wymień cztery sposoby wyprowadzania danych w JS</p>
+        <ol>
+            <li>document.write();</li>
+            <li>alert();</li>
+            <li>do okienek formularza</li>
+            <li>do tabeli</li>
+        </ol>
+
+        <p class="pytanie">2) Czym jest funkcja w JS, omów przy użyciu 4 podpunktów</p>
+            <ul>
+                <li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać  poprzez podanie ich nazwy</li>
+                <li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod</li>
+                <li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b)</li>
+                <li>Może(nie zawsze) zwrócić  obliczoną wartość  zapisaną po słowie kluczowym return</li>
+            </ul>
+
+        <p class="pytanie">3) Omów metody getElementsByName, getElementById, getElementByTagName (może być w postaci tabeli)</p>
+            <table>
+                <tr>
+                    <th>Metoda</th>
+                    <th>opis</th>
+                </tr>
+                <tr>
+                <td>getElementById("id ") </td>
+                <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td>
+                </tr>
+                <tr>
+                <td>getElementByTagName("znacznik ")</td>
+                <td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
+                </tr>
+                <tr>
+                <td>getElementByName("nazwa") </td>
+                <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu</td>
+                </tr>
+            </table>
+
+        <p class="pytanie">4) Omów właściwości  innerHTML  innerText  className. (każdą osobno)</p>
+        - <b>innerHTML</b> – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli, <br>
+        - <b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,  <br>
+        - <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu <br>
+
+</body>
+</html>

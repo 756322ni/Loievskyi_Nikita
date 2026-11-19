@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Loievskyi Nikita</title>
+ </head> 
+<body> 
+ 
+Podaj dlugość a= <input size="5px" type="text" id="dlugosc_a" placeholder="długość"><br>
+Podaj dlugość b= <input size="5px" type="text" id="dlugosc_b" placeholder="długość"><br><br>
+  Pole=    <input size="5px" id="Pole" readonly><input type="button" name="pole_loievskyi" value="Oblicz" Onclick="pole_loievskyi()"> <br>
+  obw=     <input size="5px" id="obw" readonly><input type="button" name="obw_loievskyi" value="Oblicz" Onclick="obw_loievskyi()"> 
+
+<script type="text/javascript"> 
+  function pole_loievskyi() { 
+ var a_loi= parseFloat(document.getElementById('dlugosc_a').value); 
+ var b_loi= parseFloat(document.getElementById('dlugosc_b').value); 
+ document.getElementById('Pole').value =(a_loi*b_loi).toFixed(2);
+   } 
+   function obw_loievskyi() {
+ var a_loi= parseFloat(document.getElementById('dlugosc_a').value); 
+ var b_loi= parseFloat(document.getElementById('dlugosc_b').value); 
+ document.getElementById('obw').value =(a_loi*2+b_loi*2).toFixed(2);
+   }
+ </script>
+
+</body> 
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function AB_loi() 
+   { 
+    var Ax_loi= parseFloat(document.getElementById('Ax').value);
+    var Ay_loi= parseFloat(document.getElementById('Ay').value);
+    var Bx_loi= parseFloat(document.getElementById('Bx').value);
+    var By_loi= parseFloat(document.getElementById('By').value);
+document.getElementById('AB').value =Math.sqrt((Ax_loi-Bx_loi)**2+(Ay_loi-By_loi)**2).toFixed(2);
+   } 
+
+   function BC_loi()
+   {
+    var Bx_loi= parseFloat(document.getElementById('Bx').value);
+    var By_loi= parseFloat(document.getElementById('By').value);
+    var Cx_loi= parseFloat(document.getElementById('Cx').value);
+    var Cy_loi= parseFloat(document.getElementById('Cy').value);
+document.getElementById('BC').value =Math.sqrt((Bx_loi-Cx_loi)**2+(By_loi-Cy_loi)**2).toFixed(2);
+   }
+
+   function AC_loi()
+   {
+    var Ax_loi= parseFloat(document.getElementById('Ax').value);
+    var Ay_loi= parseFloat(document.getElementById('Ay').value);
+    var Cx_loi= parseFloat(document.getElementById('Cx').value);
+    var Cy_loi= parseFloat(document.getElementById('Cy').value);
+document.getElementById('AC').value =Math.sqrt((Ax_loi-Cx_loi)**2+(Ay_loi-Cy_loi)**2).toFixed(2);
+   }
+ </script> 
+  Podaj wspólrzędne: A: <input size="1px" type="text" id="Ax" placeholder="x"><input size="1px" type="text" id="Ay" placeholder="y"> <br>
+  Podaj wspólrzędne: B: <input size="1px" type="text" id="Bx" placeholder="x"><input size="1px" type="text" id="By" placeholder="y"> <br>
+  Podaj wspólrzędne: C: <input size="1px" type="text" id="Cx" placeholder="x"><input size="1px" type="text" id="Cy" placeholder="y"> <br><br>
+  AB=<input size="1px" type="text" id="AB" readonly><input type="button" name="oblicz" value="oblicz" Onclick="AB_loi()"><br>
+  BC=<input size="1px" type="text" id="BC" readonly><input type="button" name="oblicz" value="oblicz" Onclick="BC_loi()"><br>
+  AC=<input size="1px" type="text" id="AC" readonly><input type="button" name="oblicz" value="oblicz" Onclick="AC_loi()">
+</body> 
+</html> 

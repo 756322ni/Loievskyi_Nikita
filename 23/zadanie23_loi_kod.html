@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <fieldset>
+< !DOCTYPE html>
+< html> <br>
+ < head> <br>
+  < meta charset="UTF-8"> <br>
+  < title>Loievskyi Nikita< /title><br>
+ < /head> <br>
+< body> <br>
+  <br>
+  Podaj d= < input size="5px" type="text" id="dlugosc_d" placeholder="długość"><br>
+  Podaj x= < input size="5px" type="text" id="dlugosc_x" placeholder="długość">< br>< br><br>
+  < input type="button" name="funkcja_loi" value="Oblicz" Onclick="funkcja_loi()">< br> < br> <br>
+  Drabina= < input size="5px" id="Drabina" readonly><br>
+  Alfa=    < input size="5px" id="Alfa" readonly><br>
+<br>
+< script type="text/javascript"> <br>
+  function funkcja_loi() { <br>
+ var d= parseFloat(document.getElementById('dlugosc_d').value); <br>
+ var x= parseFloat(document.getElementById('dlugosc_x').value); <br>
+ var drabina= Math.sqrt(d*d+x*x);<br>
+var alfa= Math.atan(d/x)*180/Math.PI;<br>
+<br>
+<br>
+ document.getElementById('Drabina').value =drabina;<br>
+ document.getElementById('Alfa').value =alfa.toFixed(2);<br>
+   } <br>
+ < /script><br>
+< /body> <br>
+< /html>
+    </fieldset>
+</body>
+</html>

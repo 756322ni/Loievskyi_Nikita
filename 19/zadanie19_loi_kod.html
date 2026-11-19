@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <fieldset>
+< html> <br>
+ < head> <br>
+  < meta charset="UTF-8"> <br>
+  < link rel="stylesheet" href="styl.css"> <br>
+ < /head> <br>
+< body> <br>
+ < script type="text/javascript"> <br>
+  function pole_loi() <br>
+   { <br>
+ var a= parseFloat(document.getElementById('dlugosc').value); <br>
+ var b= a*a; <br>
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b.toFixed(2)+" cm^2";  <br>
+   } <br>
+  function obwod_loi() <br>
+   { <br>
+ var a= parseFloat(document.getElementById('dlugosc').value); <br>
+ var b= 4*a; <br>
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b.toFixed(2)+" cm";  <br>
+   } <br>
+ < /script> <br>
+  < h1>Wszystko o KWADRACIE< /h1>< br>< br> <br>
+  Podaj długość boku: < input type="text" id="dlugosc" placeholder="podaj długość"> cm< br>< br>< br> <br>
+  < input type="button" name="pole_loi" value="Oblicz pole" Onclick="pole_loi()">< br>< br> <br>
+  < input type="button" name="obwod_loi" value="Oblicz obwod" Onclick="obwod_loi()">< br>< br> <br>
+  < div  style="color:red;font-size:50px;"id="nazwa">< /div> <br>
+< /body> <br>
+< /html>
+    </fieldset>
+</body>
+</html>

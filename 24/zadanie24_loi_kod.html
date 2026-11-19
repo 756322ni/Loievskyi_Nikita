@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <fieldset>
+< !DOCTYPE html> <br>
+< html> <br>
+ < head> <br>
+  < meta charset="UTF-8"> <br>
+  < title>Loievskyi Nikita< /title><br>
+ < /head> <br>
+< body> <br>
+ Tu będą wyswietlać się podane liczby < br><br>
+x1= < input size="5px" type="text" id="x1" placeholder="podana liczba" readonly><br>
+&nbsp ;&nbsp ;&nbsp ;&nbsp ;&nbsp ;<br>
+x2= < input size="5px" type="text" id="x2" placeholder="podana liczba" readonly>< br><br>
+<br>
+x1= < input size="5px" type="text" id="x1_st" placeholder="podana liczba" readonly><br>
+&nbsp ;&nbsp ;&nbsp ;&nbsp ;&nbsp ;<br>
+x1(w radianach)= < input size="5px" type="text" id="x1_rad" placeholder="podana liczba" readonly>< br>< br>< br><br>
+<br>
+  y1=    < input size="5px" id="y1" readonly>< br><br>
+  y2=     < input size="5px" id="y2" readonly>< br><br>
+  y3=     < input size="5px" id="y3" readonly><br>
+<br>
+< script type="text/javascript"> <br>
+var x1_loi = parseFloat(prompt("Podaj x1:"));<br>
+var x2_loi = parseFloat(prompt("Podaj x2:"));<br>
+document.getElementById('x1').value =x1_loi;<br>
+document.getElementById('x2').value =x2_loi;<br>
+document.getElementById('x1_st').value =x1_loi;<br>
+var x1_loi_rad=x1_loi*Math.PI/180;<br>
+document.getElementById('x1_rad').value =x1_loi_rad.toFixed(2);<br>
+<br>
+ var odp1= 3*Math.pow(x1_loi,6/8);<br>
+<br>
+ var odp2= (2*Math.cos(x1_loi_rad))+(3*Math.sin(x1_loi_rad));<br>
+<br>
+ var odp3= Math.pow((Math.pow(x1_loi,5)+2*Math.pow(x2_loi,4)*Math.abs(x1_loi-x2_loi)),1/3);<br>
+<br>
+ document.getElementById('y1').value =odp1.toFixed(2);<br>
+ document.getElementById('y2').value =odp2.toFixed(2);<br>
+ document.getElementById('y3').value =odp3.toFixed(2);<br>
+ < /script><br>
+<br>
+< /body> <br>
+< /html>
+    </fieldset>
+</body>
+</html>

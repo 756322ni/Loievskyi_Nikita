@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <fieldset>
+< !DOCTYPE html> <br>
+< html> <br>
+ < head> <br>
+  < meta charset="UTF-8"> <br>
+  < title>Loievskyi Nikita< /title><br>
+ < /head> <br>
+< body> <br>
+ <br>
+Podaj dlugość a= < input size="5px" type="text" id="dlugosc_a" placeholder="długość">< br><br>
+Podaj dlugość b= < input size="5px" type="text" id="dlugosc_b" placeholder="długość">< br>< br><br>
+  Pole=    < input size="5px" id="Pole" readonly>< input type="button" name="pole_loievskyi" value="Oblicz" Onclick="pole_loievskyi()"> < br><br>
+  obw=     < input size="5px" id="obw" readonly>< input type="button" name="obw_loievskyi" value="Oblicz" Onclick="obw_loievskyi()"> <br>
+<br>
+< script type="text/javascript"> <br>
+  function pole_loievskyi() { <br>
+ var a_loi= parseFloat(document.getElementById('dlugosc_a').value); <br>
+ var b_loi= parseFloat(document.getElementById('dlugosc_b').value); <br>
+ document.getElementById('Pole').value =(a_loi*b_loi).toFixed(2);<br>
+   } <br>
+   function obw_loievskyi() {<br>
+ var a_loi= parseFloat(document.getElementById('dlugosc_a').value); <br>
+ var b_loi= parseFloat(document.getElementById('dlugosc_b').value); <br>
+ document.getElementById('obw').value =(a_loi*2+b_loi*2).toFixed(2);<br>
+   }<br>
+ < /script><br>
+<br>
+< /body> <br>
+< /html>
+    </fieldset>
+</body>
+</html>

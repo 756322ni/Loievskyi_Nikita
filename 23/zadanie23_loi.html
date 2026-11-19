@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Loievskyi Nikita</title>
+ </head> 
+<body> 
+  
+  Podaj d= <input size="5px" type="text" id="dlugosc_d" placeholder="długość">
+  Podaj x= <input size="5px" type="text" id="dlugosc_x" placeholder="długość"><br><br>
+  <input type="button" name="funkcja_loi" value="Oblicz" Onclick="funkcja_loi()"><br><br> 
+  Drabina= <input size="5px" id="Drabina" readonly>
+  Alfa=    <input size="5px" id="Alfa" readonly>
+
+
+<script type="text/javascript"> 
+  function funkcja_loi() { 
+ var d= parseFloat(document.getElementById('dlugosc_d').value); 
+ var x= parseFloat(document.getElementById('dlugosc_x').value); 
+ var drabina= Math.sqrt(d*d+x*x);
+ var alfa= Math.atan(d/x)*180/Math.PI;
+
+
+ document.getElementById('Drabina').value =drabina;
+ document.getElementById('Alfa').value =alfa.toFixed(2);
+   } 
+ </script>
+</body> 
+</html>
